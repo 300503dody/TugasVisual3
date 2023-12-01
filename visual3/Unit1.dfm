@@ -1,6 +1,6 @@
 object Form1: TForm1
-  Left = 343
-  Top = 260
+  Left = 357
+  Top = 335
   Width = 928
   Height = 480
   Caption = 'Form1'
@@ -66,6 +66,7 @@ object Form1: TForm1
   end
   object zqry1: TZQuery
     Connection = con
+    Active = True
     SQL.Strings = (
       'select*from tb_user')
     Params = <>

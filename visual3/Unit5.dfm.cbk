@@ -1,9 +1,9 @@
-object Form2: TForm2
-  Left = 375
-  Top = 210
-  Width = 928
+object Form5: TForm5
+  Left = 219
+  Top = 143
+  Width = 915
   Height = 480
-  Caption = 'Form2'
+  Caption = 'Form5'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -16,9 +16,9 @@ object Form2: TForm2
   object l1: TLabel
     Left = 4
     Top = 8
-    Width = 61
+    Width = 78
     Height = 15
-    Caption = 'ID_Produk'
+    Caption = 'ID_Pelanggan'
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
     Font.Height = -13
@@ -29,9 +29,9 @@ object Form2: TForm2
   object l3: TLabel
     Left = 240
     Top = 12
-    Width = 88
+    Width = 84
     Height = 16
-    Caption = 'Nama_Produk'
+    Caption = 'Nama_Depan'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -13
@@ -42,9 +42,9 @@ object Form2: TForm2
   object l6: TLabel
     Left = 516
     Top = 12
-    Width = 58
+    Width = 101
     Height = 16
-    Caption = 'Deskripsi'
+    Caption = 'Nama_Belakang'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -13
@@ -55,9 +55,9 @@ object Form2: TForm2
   object l4: TLabel
     Left = 0
     Top = 44
-    Width = 39
+    Width = 46
     Height = 16
-    Caption = 'Harga'
+    Caption = 'Alamat'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -13
@@ -68,9 +68,9 @@ object Form2: TForm2
   object l7: TLabel
     Left = 240
     Top = 44
-    Width = 29
+    Width = 30
     Height = 16
-    Caption = 'Stok'
+    Caption = 'Kota'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -13
@@ -81,9 +81,9 @@ object Form2: TForm2
   object Label1: TLabel
     Left = 240
     Top = 80
-    Width = 55
+    Width = 99
     Height = 16
-    Caption = 'Kategori'
+    Caption = 'Nomor_Telepon'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -13
@@ -94,9 +94,9 @@ object Form2: TForm2
   object Label2: TLabel
     Left = 0
     Top = 80
-    Width = 83
+    Width = 32
     Height = 16
-    Caption = 'Tanggal_Rilis'
+    Caption = 'Email'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -13
@@ -107,9 +107,9 @@ object Form2: TForm2
   object Label3: TLabel
     Left = 520
     Top = 48
-    Width = 40
+    Width = 63
     Height = 16
-    Caption = 'Merek'
+    Caption = 'Kode_Pos'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -13
@@ -242,42 +242,42 @@ object Form2: TForm2
     Columns = <
       item
         Expanded = False
-        FieldName = 'ID_Produk'
+        FieldName = 'ID_Pelanggan'
         Visible = True
       end
       item
         Expanded = False
-        FieldName = 'Nama_Produk'
+        FieldName = 'Nama_Depan'
         Visible = True
       end
       item
         Expanded = False
-        FieldName = 'Deskripsi'
+        FieldName = 'Nama_Belakang'
         Visible = True
       end
       item
         Expanded = False
-        FieldName = 'Harga'
+        FieldName = 'Alamat'
         Visible = True
       end
       item
         Expanded = False
-        FieldName = 'Stok'
+        FieldName = 'Kota'
         Visible = True
       end
       item
         Expanded = False
-        FieldName = 'Merek'
+        FieldName = 'Kode_Pos'
         Visible = True
       end
       item
         Expanded = False
-        FieldName = 'Tanggal_Rilis'
+        FieldName = 'Email'
         Visible = True
       end
       item
         Expanded = False
-        FieldName = 'Kategori'
+        FieldName = 'Nomor_Telepon'
         Visible = True
       end>
   end
@@ -304,7 +304,7 @@ object Form2: TForm2
     Connection = con1
     Active = True
     SQL.Strings = (
-      'select * from produk')
+      'select * from pelanggan')
     Params = <>
     Left = 76
     Top = 224
