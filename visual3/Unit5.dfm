@@ -1,7 +1,7 @@
 object Form5: TForm5
-  Left = 197
-  Top = 138
-  Width = 928
+  Left = 219
+  Top = 143
+  Width = 915
   Height = 480
   Caption = 'Form5'
   Color = clBtnFace
@@ -169,6 +169,7 @@ object Form5: TForm5
     Height = 33
     Caption = 'Print'
     TabOrder = 5
+    OnClick = b6Click
   end
   object e_1: TEdit
     Left = 88
@@ -290,7 +291,7 @@ object Form5: TForm5
     Port = 3306
     Database = 'db_vapestore'
     User = 'root'
-    Protocol = 'mysql'
+    Protocol = 'mysql-5'
     LibraryLocation = 'D:\visual3\libmysql.dll'
     Left = 8
     Top = 220
@@ -313,15 +314,15 @@ object Form5: TForm5
     UserName = 'frxDBDataset'
     CloseDataSource = False
     FieldAliases.Strings = (
-      'ID_Produk=ID_Produk'
-      'Nama_Produk=Nama_Produk'
-      'Deskripsi=Deskripsi'
-      'Harga=Harga'
-      'Stok=Stok'
-      'Merek=Merek'
-      'Tanggal_Rilis=Tanggal_Rilis'
-      'Kategori=Kategori')
-    DataSet = zqry2
+      'ID_Pelanggan=ID_Pelanggan'
+      'Nama_Depan=Nama_Depan'
+      'Nama_Belakang=Nama_Belakang'
+      'Alamat=Alamat'
+      'Kota=Kota'
+      'Kode_Pos=Kode_Pos'
+      'Email=Email'
+      'Nomor_Telepon=Nomor_Telepon')
+    DataSource = ds1
     BCDToCurrency = False
     Left = 808
     Top = 20
@@ -343,7 +344,7 @@ object Form5: TForm5
     PrintOptions.Printer = 'Default'
     PrintOptions.PrintOnSheet = 0
     ReportOptions.CreateDate = 45260.585455277800000000
-    ReportOptions.LastChange = 45260.585455277800000000
+    ReportOptions.LastChange = 45262.405998993050000000
     ScriptLanguage = 'PascalScript'
     ScriptText.Strings = (
       'begin'
@@ -387,7 +388,7 @@ object Form5: TForm5
           Font.Style = [fsBold]
           HAlign = haCenter
           Memo.UTF8 = (
-            'LAPORAN DATA USER')
+            'LAPORAN DATA PELANGGAN')
           ParentFont = False
           VAlign = vaCenter
         end
@@ -408,7 +409,7 @@ object Form5: TForm5
           Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           HAlign = haCenter
           Memo.UTF8 = (
-            'ID Produk')
+            'ID Pelanggan')
           ParentFont = False
           VAlign = vaCenter
         end
@@ -425,7 +426,7 @@ object Form5: TForm5
           Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           HAlign = haCenter
           Memo.UTF8 = (
-            'Nama Produk')
+            'Nama Depan')
           ParentFont = False
           VAlign = vaCenter
         end
@@ -442,7 +443,7 @@ object Form5: TForm5
           Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           HAlign = haCenter
           Memo.UTF8 = (
-            'Deskripsi')
+            'Nama Belakang')
           ParentFont = False
           VAlign = vaCenter
         end
@@ -459,7 +460,7 @@ object Form5: TForm5
           Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           HAlign = haCenter
           Memo.UTF8 = (
-            'Harga')
+            'Alamat')
           ParentFont = False
           VAlign = vaCenter
         end
@@ -476,7 +477,7 @@ object Form5: TForm5
           Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           HAlign = haCenter
           Memo.UTF8 = (
-            'STOK')
+            'Kota')
           ParentFont = False
           VAlign = vaCenter
         end
@@ -493,7 +494,7 @@ object Form5: TForm5
           Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           HAlign = haCenter
           Memo.UTF8 = (
-            'MEREK')
+            'Kode Pos')
           ParentFont = False
           VAlign = vaCenter
         end
@@ -510,7 +511,7 @@ object Form5: TForm5
           Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           HAlign = haCenter
           Memo.UTF8 = (
-            'TANGGAL RILIS')
+            'Email')
           ParentFont = False
           VAlign = vaCenter
         end
@@ -527,7 +528,7 @@ object Form5: TForm5
           Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           HAlign = haCenter
           Memo.UTF8 = (
-            'KATEGORI')
+            'Nomor Telp')
           ParentFont = False
           VAlign = vaCenter
         end
@@ -543,7 +544,7 @@ object Form5: TForm5
           Width = 79.370130000000000000
           Height = 71.811070000000000000
           ShowHint = False
-          DataField = 'ID_Produk'
+          DataField = 'ID_Pelanggan'
           DataSet = frxDBDataset1
           DataSetName = 'frxDBDataset'
           Font.Charset = DEFAULT_CHARSET
@@ -554,7 +555,7 @@ object Form5: TForm5
           Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           HAlign = haCenter
           Memo.UTF8 = (
-            '[frxDBDataset."ID_Produk"]')
+            '[frxDBDataset."ID_Pelanggan"]')
           ParentFont = False
           VAlign = vaCenter
         end
@@ -563,7 +564,7 @@ object Form5: TForm5
           Width = 117.165430000000000000
           Height = 71.811070000000000000
           ShowHint = False
-          DataField = 'Stok'
+          DataField = 'Kota'
           DataSet = frxDBDataset1
           DataSetName = 'frxDBDataset'
           Font.Charset = DEFAULT_CHARSET
@@ -574,7 +575,7 @@ object Form5: TForm5
           Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           HAlign = haCenter
           Memo.UTF8 = (
-            '[frxDBDataset."Stok"]')
+            '[frxDBDataset."Kota"]')
           ParentFont = False
           VAlign = vaCenter
         end
@@ -583,7 +584,7 @@ object Form5: TForm5
           Width = 136.063080000000000000
           Height = 71.811070000000000000
           ShowHint = False
-          DataField = 'Tanggal_Rilis'
+          DataField = 'Email'
           DataSet = frxDBDataset1
           DataSetName = 'frxDBDataset'
           Font.Charset = DEFAULT_CHARSET
@@ -594,7 +595,7 @@ object Form5: TForm5
           Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           HAlign = haCenter
           Memo.UTF8 = (
-            '[frxDBDataset."Tanggal_Rilis"]')
+            '[frxDBDataset."Email"]')
           ParentFont = False
           VAlign = vaCenter
         end
@@ -603,7 +604,7 @@ object Form5: TForm5
           Width = 117.165430000000000000
           Height = 71.811070000000000000
           ShowHint = False
-          DataField = 'Kategori'
+          DataField = 'Nomor_Telepon'
           DataSet = frxDBDataset1
           DataSetName = 'frxDBDataset'
           Font.Charset = DEFAULT_CHARSET
@@ -614,7 +615,7 @@ object Form5: TForm5
           Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           HAlign = haCenter
           Memo.UTF8 = (
-            '[frxDBDataset."Kategori"]')
+            '[frxDBDataset."Nomor_Telepon"]')
           ParentFont = False
           VAlign = vaCenter
         end
@@ -623,7 +624,7 @@ object Form5: TForm5
           Width = 117.165430000000000000
           Height = 71.811070000000000000
           ShowHint = False
-          DataField = 'Merek'
+          DataField = 'Kode_Pos'
           DataSet = frxDBDataset1
           DataSetName = 'frxDBDataset'
           Font.Charset = DEFAULT_CHARSET
@@ -634,7 +635,7 @@ object Form5: TForm5
           Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           HAlign = haCenter
           Memo.UTF8 = (
-            '[frxDBDataset."Merek"]')
+            '[frxDBDataset."Kode_Pos"]')
           ParentFont = False
           VAlign = vaCenter
         end
@@ -643,7 +644,7 @@ object Form5: TForm5
           Width = 113.385900000000000000
           Height = 71.811070000000000000
           ShowHint = False
-          DataField = 'Nama_Produk'
+          DataField = 'Nama_Depan'
           DataSet = frxDBDataset1
           DataSetName = 'frxDBDataset'
           Font.Charset = DEFAULT_CHARSET
@@ -654,7 +655,7 @@ object Form5: TForm5
           Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           HAlign = haCenter
           Memo.UTF8 = (
-            '[frxDBDataset."Nama_Produk"]')
+            '[frxDBDataset."Nama_Depan"]')
           ParentFont = False
           VAlign = vaCenter
         end
@@ -663,7 +664,7 @@ object Form5: TForm5
           Width = 113.385900000000000000
           Height = 71.811070000000000000
           ShowHint = False
-          DataField = 'Deskripsi'
+          DataField = 'Nama_Belakang'
           DataSet = frxDBDataset1
           DataSetName = 'frxDBDataset'
           Font.Charset = DEFAULT_CHARSET
@@ -674,7 +675,7 @@ object Form5: TForm5
           Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           HAlign = haCenter
           Memo.UTF8 = (
-            '[frxDBDataset."Deskripsi"]')
+            '[frxDBDataset."Nama_Belakang"]')
           ParentFont = False
           VAlign = vaCenter
         end
@@ -683,7 +684,7 @@ object Form5: TForm5
           Width = 147.401670000000000000
           Height = 71.811070000000000000
           ShowHint = False
-          DataField = 'Harga'
+          DataField = 'Alamat'
           DataSet = frxDBDataset1
           DataSetName = 'frxDBDataset'
           Font.Charset = DEFAULT_CHARSET
@@ -694,7 +695,7 @@ object Form5: TForm5
           Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           HAlign = haCenter
           Memo.UTF8 = (
-            '[frxDBDataset."Harga"]')
+            '[frxDBDataset."Alamat"]')
           ParentFont = False
           VAlign = vaCenter
         end

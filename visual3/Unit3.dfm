@@ -170,6 +170,7 @@ object Form3: TForm3
     Height = 33
     Caption = 'Print'
     TabOrder = 6
+    OnClick = b6Click
   end
   object e_1: TEdit
     Left = 72
@@ -265,7 +266,7 @@ object Form3: TForm3
     PrintOptions.Printer = 'Default'
     PrintOptions.PrintOnSheet = 0
     ReportOptions.CreateDate = 45260.382709756900000000
-    ReportOptions.LastChange = 45260.382709756900000000
+    ReportOptions.LastChange = 45262.412735104170000000
     ScriptLanguage = 'PascalScript'
     ScriptText.Strings = (
       'begin'
@@ -308,7 +309,7 @@ object Form3: TForm3
           Font.Style = [fsBold]
           HAlign = haCenter
           Memo.UTF8 = (
-            'LAPORAN DATA USER')
+            'LAPORAN DATA DETAIL PESANAN')
           ParentFont = False
           VAlign = vaCenter
         end

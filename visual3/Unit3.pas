@@ -42,6 +42,7 @@ type
      procedure bersih;
     procedure b5Click(Sender: TObject);
     procedure dbgrd1CellClick(Column: TColumn);
+    procedure b6Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -214,6 +215,11 @@ b2.Enabled:= False;
 b3.Enabled:= True;
 b4.Enabled:= True;
 b5.Enabled:= True;
+end;
+
+procedure TForm3.b6Click(Sender: TObject);
+begin
+frxReport2.ShowReport();
 end;
 
 end.

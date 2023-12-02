@@ -47,6 +47,7 @@ type
     procedure bersih;
     procedure posisiawal;
     procedure FormShow(Sender: TObject);
+    procedure b6Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -116,7 +117,7 @@ begin
     begin
      ShowMessage('Nomor Telepon BELUM SESUAI');
      end else
-  if Form3.zqry1.Locate('ID_Pelanggan',e_1.Text,[]) then
+  if Form5.zqry1.Locate('ID_Pelanggan',e_1.Text,[]) then
   begin
    ShowMessage('DATA SUDAH ADA DALAM SISTEM');
   end else
@@ -258,5 +259,10 @@ b5.Enabled:= True;
 
 end;
 
+
+procedure TForm5.b6Click(Sender: TObject);
+begin
+frxReport1.ShowReport();
+end;
 
 end.

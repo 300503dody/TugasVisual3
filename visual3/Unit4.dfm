@@ -230,6 +230,7 @@ object Form4: TForm4
     Height = 33
     Caption = 'Print'
     TabOrder = 12
+    OnClick = b6Click
   end
   object frxReport1: TfrxReport
     Version = '4.12.6'
@@ -240,7 +241,7 @@ object Form4: TForm4
     PrintOptions.Printer = 'Default'
     PrintOptions.PrintOnSheet = 0
     ReportOptions.CreateDate = 45260.603911828700000000
-    ReportOptions.LastChange = 45260.603911828700000000
+    ReportOptions.LastChange = 45262.410170196760000000
     ScriptLanguage = 'PascalScript'
     ScriptText.Strings = (
       'begin'
